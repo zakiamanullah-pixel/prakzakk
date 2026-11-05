@@ -1,0 +1,3 @@
+body { scroll-behavior: smooth; }
+section { scroll-margin-top: 65px; }
+.card img { height: 170px; object-fit: cover; }

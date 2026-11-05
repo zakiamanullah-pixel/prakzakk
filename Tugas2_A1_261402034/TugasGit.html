@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Zaki Amanullah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Zaki Amanullah</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Buka menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="bg-primary text-white text-center p-5 mt-5">
+  <div class="container py-4">
+    <img src="assets/WhatsApp Image 2026-09-19 at 3.42.49 PM.jpeg" alt="Foto profil ilustrasi" width="130" height="130" class="rounded-circle mb-3">
+    <h1>Halo, Aku Zaki Amanullah</h1>
+    <p>Aku adalah mahasiswa Teknologi Informasi yang tertarik dengan Pemograman web.</p>
+    <a href="#projects" class="btn btn-light">Lihat Proyekku</a>
+  </div>
+</section>
+
+<section id="about" class="container py-5">
+  <h2 class="text-center mb-4">Tentang Aku</h2>
+  <div class="row text-center g-3">
+    <div class="col-12 col-md-4"><div class="p-3 border rounded h-100"><h5>HTML & CSS</h5><p>Membuat struktur dan tampilan website.</p></div></div>
+    <div class="col-12 col-md-4"><div class="p-3 border rounded h-100"><h5>Bootstrap</h5><p>Membuat website yang responsif.</p></div></div>
+    <div class="col-12 col-md-4"><div class="p-3 border rounded h-100"><h5>Pemrograman</h5><p>Belajar logika dan pemecahan masalah.</p></div></div>
+  </div>
+</section>
+
+<section id="projects" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Proyek Aku</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100">
+        <img src="assets/WhatsApp Image 2026-09-19 at 3.42.49 PM.jpeg" class="card-img-top" alt="Ilustrasi website">
+        <div class="card-body"><h5 class="card-title">Website Pengenalan Diri</h5><p class="card-text">halaman untuk memperkenalkan diri.</p></div>
+      </div></div>
+      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100">
+        <img src="assets/kodesimpel.png" class="card-img-top" alt="Ilustrasi kode">
+        <div class="card-body"><h5 class="card-title">Program Sederhana</h5><p class="card-text">Latihan program sederhana.</p></div>
+      </div></div>
+      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100">
+        <img src="assets/Dashboard with user interface elements Illustration.jpg" class="card-img-top" alt="Ilustrasi desain">
+        <div class="card-body"><h5 class="card-title">Desain Antarmuka</h5><p class="card-text">Desain UI sederhana.</p></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container text-center py-5">
+  <h2>Kontak</h2>
+  <p>Terima kasih sudah mengunjungi portofolio aku.</p>
+  <button class="btn btn-primary" onclick="showContact()">Tampilkan Kontak</button>
+  <div id="alertKontak" class="alert alert-info mt-3 d-none" role="alert">
+    Email: zakiamanullah33@gmail.com
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+  <p class="mb-0">© 2026 Zaki Amanullah</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function showContact() {
+  document.getElementById('alertKontak').classList.remove('d-none');
+}
+</script>
+</body>
+</html>
